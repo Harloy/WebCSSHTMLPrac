@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Tables</title>
+</head>
+<style>
+body {
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid rgb(222, 222, 222);
+    text-align: left;
+}
+
+th {
+    background-color: rgb(200, 200, 200);
+    font-weight: bold;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+}
+
+tr:hover, tr:hover td {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, color 0.3s;
+}
+</style>
+<body>
+<table>
+    <thead>
+    <tr>
+        <th>Country</th>
+        <th>Population</th>
+        <th>Score</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Somewhere</td>
+        <td>3M</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Somewhere else</td>
+        <td>12M</td>
+        <td>125</td>
+    </tr>
+    <tr>
+        <td>That place</td>
+        <td>23M</td>
+        <td>235</td>
+    </tr>
+    <tr>
+        <td>Somewhere</td>
+        <td>3M</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Somewhere else</td>
+        <td>12M</td>
+        <td>125</td>
+    </tr>
+    <tr>
+        <td>That place</td>
+        <td>23M</td>
+        <td>235</td>
+    </tr><tr>
+        <td>Somewhere</td>
+        <td>3M</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Somewhere else</td>
+        <td>12M</td>
+        <td>125</td>
+    </tr>
+    <tr>
+        <td>That place</td>
+        <td>23M</td>
+        <td>235</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

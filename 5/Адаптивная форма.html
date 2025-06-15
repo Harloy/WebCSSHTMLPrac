@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        :root {
+            --size-xl: 600px;
+            --size-desktop: 520px;
+            --size-tablet: 380px;
+            --size-phone: 320px;
+            --label-width: 100px;
+            --border-radius: 3px;
+        }
+        
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 5vh;
+        }
+        
+        .card {
+            position: relative;
+            width: var(--size-xl);
+            background-color: #f6f6f6;
+            border: 1px solid #bbb;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
+            padding: 50px 60px 52px;
+            border-radius: var(--border-radius);
+        }
+        
+        .card > h2 {
+            position: absolute;
+            top: -20px;
+            left: -1px;
+            margin: 0;
+            padding: 8px 80px 8px 10px;
+            font-size: 1.2rem;
+            background-color: #ffffff;
+            border: 1px solid #bbb;
+            text-align: left;
+            border-radius: var(--border-radius);
+        }
+        
+        .form-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            width: var(--label-width);
+            font-weight: bold;
+            white-space: nowrap;
+            border-radius: var(--border-radius);
+        }
+        
+        .input-wrap {
+            position: relative;
+            flex-grow: 1;
+        }
+        
+        .input-wrap i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+            font-size: 1rem;
+            pointer-events: none;
+        }
+        
+        input {
+            width: 100%;
+            padding: 10px 10px 10px 36px;
+            font-size: 1rem;
+            border: 1px solid #bbb;
+            background: #fff;
+            box-sizing: border-box;
+            outline: none;
+            border-radius: var(--border-radius);
+        }
+        
+        input:focus {
+            border-color: #000;
+        }
+        
+        button {
+            display: inline-block;
+            cursor: pointer;
+            border: none;
+            background-color: #2a2a2a;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 36px;
+            font-size: 0.95rem;
+            transition: background-color 0.2s ease-in-out;
+            border-radius: var(--border-radius);
+        }
+        
+        button:hover {
+            background-color: #000;
+        }
+        
+        @media (max-width: 1599px) {
+            .card {
+                width: var(--size-desktop);
+            }
+        }
+        
+        @media (max-width: 1199px) {
+            .card {
+                width: var(--size-tablet);
+                padding: 40px 46px 48px;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            body {
+                padding-top: 4vh;
+            }
+            .card {
+                width: var(--size-phone);
+                padding: 32px 32px 40px;
+            }
+            .card > h2 {
+                font-size: 1rem;
+                padding: 8px 80px 8px 10px;
+            }
+            label {
+                font-size: 0.9rem;
+                display:column-reverse;
+
+            }
+            button {
+                font-size: 0.85rem;
+                padding: 8px 18px;
+            }
+
+            .form-row {
+                display: flex;
+                align-items:normal; 
+                margin-bottom: 20px;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <h2>Login</h2>
+    <div class="form-row">
+        <label for="username">Username</label>
+        <div class="input-wrap">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="username">
+        </div>
+    </div>
+    <div class="form-row">
+        <label for="password">Password</label>
+        <div class="input-wrap">
+            <i class="fa-solid fa-key"></i>
+            <input type="password" id="password">
+        </div>
+    </div>
+    <button>Login</button>
+</div>
+</body>
+</html>

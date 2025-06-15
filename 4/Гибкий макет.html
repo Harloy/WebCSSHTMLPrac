@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Гибкий макет</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 0;
+            padding: 30px;
+            background: #eeee;
+        }
+        
+        header,
+        main,
+        aside,
+        footer {
+            background: white;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+            padding: 28px;
+            font-weight: 600;
+            color: rgba(0, 0, 0, 0.555);
+        }
+        
+        header,
+        footer {
+            flex: 1 1 100%;
+            min-height: 140px;
+        }
+        
+        main {
+            flex: 2 1 66%;
+            min-height: 360px;
+        }
+        
+        aside {
+            flex: 1 1 32%;
+            min-height: 360px;
+        }
+        
+    </style>
+</head>
+<body>
+<header>HEADER</header>
+<main>MAIN</main>
+<aside>ASIDE</aside>
+<footer>FOOTER</footer>
+</body>
+</html>
